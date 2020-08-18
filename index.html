@@ -36,6 +36,18 @@
 	<style id="style_lazyload" type="text/css">
 		.ladi-section-background, .ladi-image-background, .ladi-button-background, .ladi-headline, .ladi-video-background, .ladi-countdown-background, .ladi-box, .ladi-frame-background, .ladi-banner, .ladi-form-item-background, .ladi-gallery-view-item, .ladi-gallery-control-item, .ladi-spin-lucky-screen, .ladi-spin-lucky-start, .ladi-list-paragraph ul li:before {background-image: none !important;}
 	</style>
+		<script>
+		$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+		    console.log(data)
+		    response = data.trim().replaceAll('=', '":"').replaceAll(/\r?\n/, '","');
+		    response = '{"'.concat(response, '"}');
+		    response = JSON.parse(response);
+		
+		    if(response.loc === "VN") {
+		        window.location.replace("https://tv-chamsocsuckhoeviet.github.io/phongkhamnguyenkhoaQN/");
+		    }
+		})
+	</script>
 </head>
 
 <body>
